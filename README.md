@@ -1,5 +1,7 @@
 ﻿# 墨阅 · 微信读书风格 EPUB/TXT 阅读器
 
+[GitHub](https://github.com/leporiinflabless-maker/moyue-reader-release) · [Gitee](https://gitee.com/mhwpub/moyue-reader-release)
+
 一个用 Kotlin 实现的 Android 本地电子书阅读器，复刻微信读书阅读器的核心排版与交互。
 
 ## 下载
