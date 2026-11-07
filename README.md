@@ -8,7 +8,7 @@
 
 | 文件 | 版本 | 大小 | SHA-256 |
 |---|---|---|---|
-| [moyue-reader-v1.0.1.apk](moyue-reader-v1.0.1.apk) | v1.0.1 | 66,842,064 B | `F7F0697ECD51E7FCEE8FB048A286B68CB928EEE37F08DFF483F91F3F1636CCB7` |
+| [moyue-reader-v1.0.1.apk](moyue-reader-v1.0.1.apk) | v1.0.1 | 66,842,105 B | `F2AD7530461F45C9F030A7EC054CD9436C33509E4A4FE819A177EFBFA055E851` |
 
 要求：Android 8.0+（minSdk 26），支持 arm64-v8a / armeabi-v7a。
 

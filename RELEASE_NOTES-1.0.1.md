@@ -4,8 +4,8 @@
 
 ## 下载
 
-- `moyue-reader-v1.0.1.apk`（66,842,064 B）
-- SHA-256：`F7F0697ECD51E7FCEE8FB048A286B68CB928EEE37F08DFF483F91F3F1636CCB7`
+- `moyue-reader-v1.0.1.apk`（66,842,105 B）
+- SHA-256：`F2AD7530461F45C9F030A7EC054CD9436C33509E4A4FE819A177EFBFA055E851`
 
 要求 Android 8.0+（minSdk 26），versionCode 2，versionName 1.0.1。
 
@@ -13,7 +13,7 @@
 
 - **行末词高亮坐标**：`getPrimaryHorizontal(line.end)` 会返回下一行行首，导致行末词高亮横跨到左边距；现在行末使用当前行 `getLineRight()`，同时修复选择框和选择柄的同类坐标。
 - **软连字符/零宽字符映射**：Edge `WordBoundary.Text` 不含 `U+00AD` 等朗读不可见字符；直接查找失败时先去掉这些字符并保留原文映射，避免高亮卡在整句或后续词错位。
-- **跨页长句**：长句朗读到下一页时只向前翻页，不重新调用 `playCurrent()`，避免句子从头重读。
+- **跨页长句**：长句朗读到下一页时只向前翻页，不重新调用 `playCurrent()`，避免句子从头重读。翻页使用二分查找定位页面，并按词偏移更新阅读进度。
 - **block 边界定位**：页首正好落在两个 block 分隔位时，`findIndexAt` 返回后一个 block 的首句，不再从上一句重新开始。
 
 ## 未修复/限制
